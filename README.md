@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/WatchedDog/Meet-Landing-Page/
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://codepen.io/WatchedDog/project/live/ZdJqVp
 
 ## My process
 
