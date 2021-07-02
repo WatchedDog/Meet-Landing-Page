@@ -1,0 +1,412 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blue {
+  background: #4d96a9;
+}
+
+.purple {
+  background: #855fb1;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Header */
+
+.logo {
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  max-height: 358px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 61px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.image-left,
+.image-right {
+  flex: 450px;
+}
+
+.hero-middle {
+  flex: 604px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-left,
+.image-right {
+  justify-content: flex-end;
+}
+
+.hero-middle > h1 {
+  font-weight: bold;
+  font-size: 6vh;
+  text-align: center;
+  line-height: 64px;
+  margin-bottom: 34px;
+}
+
+.hero-middle > p {
+  color: #87879d;
+  text-align: center;
+  font-size: 2vh;
+  line-height: 26px;
+}
+
+.hero-link {
+  display: inline-flex;
+  margin-top: 32px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero-link a,
+.footer-text a {
+  border-radius: 29px;
+  padding: 12px 15px;
+}
+
+/* Page */
+
+.page-1,
+.page-2 {
+  max-width: 56px;
+  height: 140px;
+  position: relative;
+  margin: auto;
+}
+
+.verticle-line {
+  border: 1px solid #87879d;
+  position: absolute;
+  left: 50%;
+  height: 84px;
+  opacity: 0.25;
+  margin-top: 117px;
+}
+
+.circle {
+  height: 56px;
+  position: relative;
+  top: 200px;
+  width: 56px;
+  border: 1px solid rgba(135, 135, 157, 1);
+  opacity: 0.25;
+  border-radius: 50%;
+  display: inline-block;
+}
+.circle > p {
+  position: absolute;
+  top: 15px;
+  left: 30%;
+  color: #87879d;
+}
+/* Gallery */
+
+.gallery {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.gallery img {
+  align-items: center;
+  display: inline-flex;
+  padding-right: 30px;
+  max-width: 255px;
+  max-height: 242px;
+}
+
+/* Smarter Text */
+
+.smarter-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 72px;
+}
+
+.smarter-text h2 {
+  margin-bottom: 16px;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4d96a9;
+  text-align: center;
+}
+
+.smarter-text h1 {
+  margin-bottom: 32px;
+  font-family: Red Hat Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #28283d;
+}
+
+.smarter-text p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #87879d;
+}
+
+/* Page 2 */
+
+.page-2 {
+  position: relatiive;
+  margin-bottom: -28px;
+  z-index: 10;
+}
+
+.page-2 .verticle-line {
+  margin-top: 0;
+}
+
+.page-2 .circle {
+  top: 84px;
+  background: #fafafa;
+  opacity: 2;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  height: 100%;
+  background: url(./assets/desktop/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  padding-bottom: 1em;
+}
+
+footer::after {
+  display: block;
+  position: absolute;
+  content: "";
+  opacity: 0.9;
+  background: #4d96a9;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.footer-text {
+  display: flex;
+  z-index: 10;
+  height: 100%;
+  max-width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.footer-text a {
+  border-radius: 29px;
+  padding: 12px 50px;
+}
+
+.footer-text h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+
+  color: #fafafa;
+}
+
+.footer-text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #fafafa;
+}
+
+/* Tablet  */
+
+@media only screen and (max-width: 1024px) {
+  .page-1 {
+    display: none;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pic-4 {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-1 {
+    display: none;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 64px;
+  }
+
+  .image-left {
+    order: 1;
+  }
+
+  .image-right {
+    order: 2;
+  }
+
+  .hero-middle {
+    order: 3;
+  }
+  .image-left,
+  .image-right {
+    flex: 50%;
+  }
+  .hero-middle {
+    flex: 100%;
+  }
+
+  .hero-middle > h1 {
+    margin-top: 72px;
+    font-size: 48px;
+  }
+  .hero-middle > p {
+    font-size: 16px;
+    max-width: 60%;
+    margin: auto;
+  }
+  .gallery {
+    padding-top: 207px;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pic-3,
+  .pic-4 {
+    padding-right: 0;
+  }
+
+  .pic-1,
+  .pic-2 {
+    padding-bottom: 30px;
+  }
+
+  .pic-4 {
+    padding-top: 0;
+  }
+  .footer-text {
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+
+  .footer-text > h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    flex: 100%;
+    /* or 110% */
+
+    text-align: center;
+    margin-top: 64px;
+    color: #fafafa;
+  }
+
+  .footer-text > p {
+    flex: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+
+    text-align: center;
+    margin-top: 32px;
+    color: #fafafa;
+  }
+
+  .footer-text > a {
+    border-radius: 29px;
+    margin-top: 40px;
+  }
+}
+
+/* Mobile Phone */
+
+@media only screen and (max-width: 414px) {
+  .gallery {
+    margin-right: 21px;
+  }
+
+  .pic-4 {
+    padding-top: 30px;
+  }
+
+  .smarter-text {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .page-2 {
+    margin-top: 4em;
+  }
+}
