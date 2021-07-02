@@ -69,7 +69,7 @@ body {
 
 .hero-middle > h1 {
   font-weight: bold;
-  font-size: 6vh;
+  font-size: 64px;
   text-align: center;
   line-height: 64px;
   margin-bottom: 34px;
@@ -293,7 +293,7 @@ footer::after {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .page-1 {
     display: none;
   }
